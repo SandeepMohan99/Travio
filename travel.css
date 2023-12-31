@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+/* Home starts */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bg-hero.jpg);
+    background-size: cover;
+}
+
+.home .content{
+    text-align: center;
+    padding: 100px;
+
+}
+
+.home .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 800px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800px;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.home .content h1{
+    font-size: 80px;
+    font-weight: bolder;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after{
+    content: ' ';
+    color: orange;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+     0%{content:"Dubai"}
+    20%{content:"Thailand"}
+    40%{content:"Singapore"}
+    60%{content:"Maldives"}
+    80%{content:"Nepal"} 
+   100%{content:"Bali "}
+}
+
+.home .content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:950px){
+    .home .content h5{
+        font-size: 20px;
+    }
+    .home .content h1{
+        font-size: 30px;
+    }
+    .home .content p{
+        font-size: 10px;
+    }
+
+    .home .content h2{
+        font-size: 30px;
+    }
+    
+}
+
+
+
+
+/* Home Section End */
+
+
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.packages h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: bold;
+    font-size: 50px;
+}
+.packages h1 span{
+    color: #ffa500;
+}
+
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+/* Section Packages End */
+
+.guides h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.guides h1 span{
+    color: #ffa500;
+}
+
+.team-team{
+    box-shadow: 0 0 45px rgba(0,0,0,0.8);
+}
+
+.team-item img{
+    transition: 0.5s;
+}
+
+.team-item:hover img{
+    transform: scale(1.2); 
+}
+
+.team-item .btn{
+    background: #ffffff;
+    color: orange;
+    border-radius: 20px;
+    border-bottom: 1px solid;
+}
+
+.team-item .btn:hover{
+    background: orange;
+}
+
+/* Service starts */
+.services h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.services h1 span{
+    color: #ffa500;
+}
+
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+    transition: 0.3s ease-in;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 60px;
+    text-align: center;
+    color: orange;
+    margin-top: 20px;
+}
+
+
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+
+.btn-service {
+   display: inline-block;
+   padding: 10px 26px;
+   background-color: orange;
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+   border-radius: 30px;
+   margin: 10px 0px;
+}
+/* service ends */
+
+
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #aaa8a8;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
